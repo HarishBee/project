@@ -1,0 +1,74 @@
+
+.form{
+    max-width: 400px; 
+    top: 70px; 
+    position: absolute;
+
+    left: 600px;
+    padding:10px; 
+   
+    
+    color: rgb(204, 11, 11);
+     
+     
+ }
+ #reg{
+    position: absolute;
+    color: rgb(230, 92, 92);
+    top: 55px;
+    left:710px ;
+    font-size: 25px;
+ } 
+ .form label{
+    color:rgb(119, 39, 39) ;
+}
+.form select,.form input{
+    border:solid rgb(205, 11, 11);
+    width: 200px; 
+    padding: 8px;
+    margin-bottom:50px ;
+    background-color: #000;
+    color: rgb(202, 81, 11);
+    
+    border-radius: 3px; 
+}
+.button{
+    background-color: rgb(147, 102, 102);
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    position:absolute;
+    cursor: pointer;
+    bottom: 10px;
+    font-size: 16px;
+}
+.button:hover{
+    background-color: rgb(187, 80, 56);
+}
+.logo{
+    position: absolute;
+    top:20px;
+    left: 40px;
+    max-width: 150px; 
+    opacity: .7;  
+}
+.img1{
+    display: flex;
+    position: relative;
+    top: 17px;
+    bottom: 20px;
+    
+    
+    width: 4000px;
+    height: 700px;
+    opacity: 0.2;
+}
+.bg{
+    display: flex;
+    background-color: #000;
+    
+    height:713px;
+    
+    
+}

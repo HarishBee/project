@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+    <script src="https://kit.fontawesome.com/d7b2d1dd02.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="{% static 'img\Free_Sample_By_Wix.jpg' %}" class="logo">
+                <ul id="sidemenu">
+                    <i id="ico" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#services">Services</a> </li>
+                    <li><a href="#portfolio">Portfolio</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <li><a class="login1" href="login">login</a></li>
+                    
+                </ul>
+                <i id="ico" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text"><p>UI/UX Desiger</p>
+            <h1>Hi,I'm <span>Harish</span> <br>Origin From India </h1></div>
+            <a href="login" class="login"><i class="fa-solid fa-arrow-right-to-bracket"></i> login</a>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img style="height: 400px;width: 250px;position: relative; top: 10px;" src="{% static 'img\harish.jpg' %}">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1> 
+                    <p>Harish, a dedicated and resilient individual, has successfully completed a BSc in Computer Science, showcasing a strong work ethic and an unwavering attitude of never giving up. Armed with a comprehensive understanding of Python full-stack development acquired through a rigorous course, he embodies a positive outlook. Beyond the realm of academics, Harish excels in both sports and trading, demonstrating a versatile skill set that extends from the digital landscape to real-world activities. His commitment to continuous learning and a multifaceted approach to life positions him as a dynamic force ready to make a meaningful impact in various domains.</p>   
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Activicy')">Activicy</p>
+                </div>
+                <div class="tab-content active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI?UX</span> <br> Designing web/App interface</li>
+                        <li><span>Web Development</span> <br> Web Application Development</li>
+                        <li><span>UI?UX</span> <br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="Education">
+                    <ul><li><span>2023- End</span> <br>Kirabiz technology internship </li>
+                        <li><span>2023</span> <br>Completion of Python full stack development</li>
+                        <li><span>2018-2021</span> <br> Bachlor's degree (BSc-cs) </li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-content" id="Activicy">
+                    <ul><li><span>2018</span> <br>Completion of HSC scored-781  </li>
+                        <li><span>2016</span> <br>Completion of SSC scord-408</li>   
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<div id="services"></div>
+    <div class="container">
+        <h1 class="sub">My Services</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p> offer web-based solutions for different needs, such as hosting, development, design, testing, analytics, and more. Some examples of web application services are AWS, Google Cloud, Azure, Firebase, Heroku, and Shopify.</p>
+                <a href="#">learn more</a> 
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>offers various bespoke UI and UX design services, including mobile app design, augmented reality (AR) experience design, cross-platform experience design, consulting, design workshops, and web design services</p>
+                <a href="#">learn more</a> 
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>provides application services that support and enhance application use, configured to provide specific software services for business- or customer-facing app solutions.</p>
+                <a href="#">learn more</a> 
+            </div>        
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub">My Work</div>
+               <div class="work-list">
+                <div class="work">
+                    <img src="{% static 'img\social.jpg' %}">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <P>A blog post that outlines the main elements and features of social media app development, such as user registration, content creation, engagement, and notifications.</P>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="{% static 'img\music.jpg' %}">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <P>provides application services that support and enhance application use, configured to provide specific software services for business- or customer-facing app solutions.</P>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="{% static 'img\shop.jpg' %}">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <P>A comprehensive guide on developing an eCommerce app, with each step discussed in detail along with the cost evaluation</P>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="btn"> See more</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub">Contact Me</h1> <br>
+                    <p><i class="fa-solid fa-paper-plane"></i>harishbabu59543@gmail.com</p> <br>
+                    <p><i class="fa-solid fa-phone"></i>6379231383</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/harish_babu_9396?igsh=bXl6em13ZTcxMTAy"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/HARISHBABUAG?s=03"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/harish-babu-g-7523362b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="C:\Users\Harish Babu G\Downloads\HARISHResume (1).doc" class="btn btn2">Download Cv</a></div>
+                    </div>
+                    
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Yor Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Messages.."></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>  
+            </div>
+        </div>
+    
+    </div>
+    <footer id="foot">&copy;   Harish <i class="fa-solid fa-heart"></i></footer>
+    
+    <script>
+        var tablink = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname){
+            for (tablinks of tablink){
+                tablinks.classList.remove("active-links");
+            }
+        
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
